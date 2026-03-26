@@ -1,7 +1,16 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12">
+      <v-col cols="4">
+        <v-text-field
+          label="起輸入保單編號"
+          variant="outlined"
+          density="compact"
+          v-model="code"
+        >
+        </v-text-field>
+      </v-col>
+      <v-col cols="8">
         <v-select
           :items="occLevels"
           item-title="title"
@@ -99,6 +108,7 @@ watch(page, (newPage) => {
 
 //篩選
 const occLevels = [
+  { title: "全部", value: 0 },
   { title: "第一級: 危險度極低", value: 1 },
   { title: "第二級: 危險度低", value: 2 },
   { title: "第三級: 危險度中", value: 3 },
@@ -109,13 +119,21 @@ const occLevels = [
 
 const occLevel = ref(null);
 
-const occFilter = computed(() => {
-  return virUsers.value.filter((value) => {
-    return occLevel.value == null || value.applicant.occLevel == occLevel.value;
-  });
-});
-
 watch(occLevel, () => {
   page.value = 1;
+});
+
+//保單編號搜尋
+const code = ref("");
+
+const occFilter = computed(() => {
+  return virUsers.value.filter((value) => {
+    const occFilter =
+      occLevel.value == null ||
+      occLevel.value == 0 ||
+      value.applicant.occLevel == occLevel.value;
+    const codeFilter = code.value == "" || value.policyNo == code.value;
+    return occFilter && codeFilter;
+  });
 });
 </script>
