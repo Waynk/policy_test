@@ -1,0 +1,60 @@
+{
+  "policyNo": "L987654321",
+  "applicant": {
+    "name": "王小明",
+    "relation": "本人",
+    "id": "A123456789",
+    "gender": "M",
+    "birthDate": "1990/01/01",
+    "occupation": "建築工程現場監工",
+    "occLevel": 3
+  },
+ "allProducts": [
+    {
+      "id": "MAIN_PL03",
+      "type": "主約",
+      "name": "守護終身壽險 (PL03)",
+      "amount": 5000000,
+      "premium": 45000
+    },
+    {
+      "id": "R01",
+      "type": "附約",
+      "name": "意外傷害醫療",
+      "amount": 100000,
+      "premium": 1500
+    },
+    {
+      "id": "R02",
+      "type": "附約",
+      "name": "住院醫療日額",
+      "amount": 2000,
+      "premium": 800
+    }
+  ],
+  "riskAlerts": [
+    {
+      "id": 1,
+      "type": "Health",
+      "message": "客戶告知：五年前有高血壓就醫紀錄",
+      "severity": "High"
+    },
+    {
+      "id": 2,
+      "type": "Occupation",
+      "message": "職業等級 3，需加收職業加費",
+      "severity": "Medium"
+    },
+    {
+      "id": 3,
+      "type": "Financial",
+      "message": "累計保額超過年收入 10 倍",
+      "severity": "Low"
+    }
+  ],
+  "status": "Underwriting",
+  "healthDeclarations": [
+  { "q": "是否患有高血壓？", "a": "是", "detail": "診斷至今5年，定期服藥控制。" },
+  { "q": "是否有抽菸習慣？", "a": "否", "detail": "" }
+]
+}

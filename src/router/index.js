@@ -18,6 +18,14 @@ const routes = [
   {
     path: '/card',
     component: () => import('../components/UserCard.vue')
+  },
+  {
+    path: '/staff',
+    component: () => import('../components/StaffInfo.vue')
+  },
+  {
+    path: '/review',
+    component: () => import('../views/ReviewPolicy.vue')
   }
 ]
 
