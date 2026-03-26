@@ -12,34 +12,12 @@
       "occLevel": 5
     },
     "allProducts": [
-      {
-        "id": "MAIN_PL03",
-        "type": "主約",
-        "name": "守護終身壽險 (PL03)",
-        "amount": 2000000,
-        "premium": 32000
-      },
-      {
-        "id": "R05",
-        "type": "附約",
-        "name": "意外失能給付",
-        "amount": 5000000,
-        "premium": 6000
-      }
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 2000000, "premium": 32000 },
+      { "id": "R05", "type": "附約", "name": "意外失能給付", "amount": 5000000, "premium": 6000 }
     ],
     "riskAlerts": [
-      {
-        "id": 1,
-        "type": "Occupation",
-        "message": "職業等級 5，屬高危險工種，需核定限額",
-        "severity": "High"
-      },
-      {
-        "id": 2,
-        "type": "History",
-        "message": "兩年前曾有同業拒保紀錄",
-        "severity": "High"
-      }
+      { "id": 1, "type": "Occupation", "message": "職業等級 5，屬高危險工種，需核定限額", "severity": "High" },
+      { "id": 2, "type": "History", "message": "兩年前曾有同業拒保紀錄", "severity": "High" }
     ],
     "status": "Pending",
     "healthDeclarations": [
@@ -60,27 +38,9 @@
       "occLevel": 1
     },
     "allProducts": [
-      {
-        "id": "MAIN_PL03",
-        "type": "主約",
-        "name": "守護終身壽險 (PL03)",
-        "amount": 1000000,
-        "premium": 18000
-      },
-      {
-        "id": "R02",
-        "type": "附約",
-        "name": "住院醫療日額",
-        "amount": 3000,
-        "premium": 1200
-      },
-      {
-        "id": "R08",
-        "type": "附約",
-        "name": "癌症醫療終身",
-        "amount": 1000000,
-        "premium": 5500
-      }
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 1000000, "premium": 18000 },
+      { "id": "R02", "type": "附約", "name": "住院醫療日額", "amount": 3000, "premium": 1200 },
+      { "id": "R08", "type": "附約", "name": "癌症醫療終身", "amount": 1000000, "premium": 5500 }
     ],
     "riskAlerts": [],
     "status": "Approved",
@@ -102,31 +62,618 @@
       "occLevel": 1
     },
     "allProducts": [
-      {
-        "id": "MAIN_PL03",
-        "type": "主約",
-        "name": "守護終身壽險 (PL03)",
-        "amount": 50000000,
-        "premium": 850000
-      }
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 50000000, "premium": 850000 }
     ],
     "riskAlerts": [
-      {
-        "id": 1,
-        "type": "Financial",
-        "message": "高保額件：需進行財務核保並提供財力證明",
-        "severity": "Medium"
-      },
-      {
-        "id": 2,
-        "type": "Health",
-        "message": "需安排體檢 (一般體檢+心電圖)",
-        "severity": "Medium"
-      }
+      { "id": 1, "type": "Financial", "message": "高保額件：需進行財務核保並提供財力證明", "severity": "Medium" },
+      { "id": 2, "type": "Health", "message": "需安排體檢 (一般體檢+心電圖)", "severity": "Medium" }
     ],
     "status": "Underwriting",
     "healthDeclarations": [
       { "q": "是否有抽菸習慣？", "a": "是", "detail": "每日約半包，菸齡 20 年。" }
+    ]
+  },
+  {
+    "policyNo": "L223344556",
+    "applicant": {
+      "name": "張小芬",
+      "avatar": "https://i.pravatar.cc/150?u=L223344556",
+      "relation": "本人",
+      "id": "E223344556",
+      "gender": "F",
+      "birthDate": "2000/01/01",
+      "occupation": "外送員",
+      "occLevel": 3
+    },
+    "allProducts": [
+      { "id": "MAIN_PA01", "type": "主約", "name": "安心傷害保險", "amount": 2000000, "premium": 4500 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Occupation", "message": "外送職業風險較高，需確認每日配送時數", "severity": "Low" }
+    ],
+    "status": "Underwriting",
+    "healthDeclarations": [
+      { "q": "是否患有糖尿病？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L998877665",
+    "applicant": {
+      "name": "王志明",
+      "avatar": "https://i.pravatar.cc/150?u=L998877665",
+      "relation": "本人",
+      "id": "B123456789",
+      "gender": "M",
+      "birthDate": "1990/08/25",
+      "occupation": "軟體工程師",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 3000000, "premium": 42000 },
+      { "id": "R12", "type": "附約", "name": "重大疾病給付", "amount": 1000000, "premium": 8000 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "是否曾有心臟疾病？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L334455667",
+    "applicant": {
+      "name": "黃雅婷",
+      "avatar": "https://i.pravatar.cc/150?u=L334455667",
+      "relation": "本人",
+      "id": "G221144335",
+      "gender": "F",
+      "birthDate": "1988/12/30",
+      "occupation": "護理師",
+      "occLevel": 2
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 1500000, "premium": 28000 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Health", "message": "BMI 超標，需進行加費評估", "severity": "Medium" }
+    ],
+    "status": "Pending",
+    "healthDeclarations": [
+      { "q": "目前身高體重？", "a": "是", "detail": "160cm / 95kg" }
+    ]
+  },
+  {
+    "policyNo": "L445566778",
+    "applicant": {
+      "name": "趙子龍",
+      "avatar": "https://i.pravatar.cc/150?u=L445566778",
+      "relation": "本人",
+      "id": "D112233445",
+      "gender": "M",
+      "birthDate": "1980/04/05",
+      "occupation": "職業司機",
+      "occLevel": 4
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 1000000, "premium": 25000 },
+      { "id": "R05", "type": "附約", "name": "意外失能給付", "amount": 2000000, "premium": 5000 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Occupation", "message": "職業司機，職等 4，需注意意外險費率", "severity": "Medium" }
+    ],
+    "status": "Underwriting",
+    "healthDeclarations": [
+      { "q": "是否有飲酒習慣？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L667788990",
+    "applicant": {
+      "name": "郭元甲",
+      "avatar": "https://i.pravatar.cc/150?u=L667788990",
+      "relation": "本人",
+      "id": "K112244335",
+      "gender": "M",
+      "birthDate": "1965/07/18",
+      "occupation": "工地主任",
+      "occLevel": 4
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 500000, "premium": 22000 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Health", "message": "高齡投保且有高血壓紀錄，建議除外或加費", "severity": "High" }
+    ],
+    "status": "Rejected",
+    "healthDeclarations": [
+      { "q": "是否患有高血壓？", "a": "是", "detail": "服藥中，收縮壓 155 mmHg。" }
+    ]
+  },
+  {
+    "policyNo": "L778899001",
+    "applicant": {
+      "name": "徐若瑄",
+      "avatar": "https://i.pravatar.cc/150?u=L778899001",
+      "relation": "本人",
+      "id": "P223311445",
+      "gender": "F",
+      "birthDate": "1992/02/14",
+      "occupation": "瑜伽老師",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "R02", "type": "附約", "name": "住院醫療日額", "amount": 5000, "premium": 2500 },
+      { "id": "R15", "type": "附約", "name": "實支實付醫療險", "amount": 200000, "premium": 6800 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "過去一年是否有住院紀錄？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L111122223",
+    "applicant": {
+      "name": "周杰倫",
+      "avatar": "https://i.pravatar.cc/150?u=L111122223",
+      "relation": "本人",
+      "id": "A123000999",
+      "gender": "M",
+      "birthDate": "1979/01/18",
+      "occupation": "音樂製作人",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 10000000, "premium": 150000 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Health", "message": "自述有僵直性脊椎炎病史", "severity": "Medium" }
+    ],
+    "status": "Pending",
+    "healthDeclarations": [
+      { "q": "是否患有免疫系統疾病？", "a": "是", "detail": "確診僵直性脊椎炎，定期回診。" }
+    ]
+  },
+  {
+    "policyNo": "L500100200",
+    "applicant": {
+      "name": "蔡文凱",
+      "avatar": "https://i.pravatar.cc/150?u=L500100200",
+      "relation": "本人",
+      "id": "A111222333",
+      "gender": "M",
+      "birthDate": "1992/06/15",
+      "occupation": "中學教師",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 3000000, "premium": 45000 },
+      { "id": "R15", "type": "附約", "name": "實支實付醫療險", "amount": 100000, "premium": 4200 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "過去五年內是否曾住院？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L500100201",
+    "applicant": {
+      "name": "洪淑芬",
+      "avatar": "https://i.pravatar.cc/150?u=L500100201",
+      "relation": "本人",
+      "id": "F222333444",
+      "gender": "F",
+      "birthDate": "1978/10/22",
+      "occupation": "消防員",
+      "occLevel": 6
+    },
+    "allProducts": [
+      { "id": "MAIN_PA01", "type": "主約", "name": "安心傷害保險", "amount": 5000000, "premium": 18000 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Occupation", "message": "職等 6 超出一般意外險承保上限", "severity": "High" }
+    ],
+    "status": "Rejected",
+    "healthDeclarations": [
+      { "q": "是否有從事危險運動？", "a": "是", "detail": "因職業需求，經常參與搜救行動。" }
+    ]
+  },
+  {
+    "policyNo": "L500100202",
+    "applicant": {
+      "name": "鄭智勳",
+      "avatar": "https://i.pravatar.cc/150?u=L500100202",
+      "relation": "本人",
+      "id": "B123123123",
+      "gender": "M",
+      "birthDate": "1988/03/12",
+      "occupation": "室內設計師",
+      "occLevel": 2
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 2500000, "premium": 38000 },
+      { "id": "R02", "type": "附約", "name": "住院醫療日額", "amount": 2000, "premium": 1500 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "有無藥物過敏？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L500100203",
+    "applicant": {
+      "name": "吳柏翰",
+      "avatar": "https://i.pravatar.cc/150?u=L500100203",
+      "relation": "本人",
+      "id": "E111444555",
+      "gender": "M",
+      "birthDate": "1994/09/05",
+      "occupation": "連鎖餐廳廚師",
+      "occLevel": 3
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 1000000, "premium": 15000 },
+      { "id": "R05", "type": "附約", "name": "意外失能給付", "amount": 3000000, "premium": 4500 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Occupation", "message": "廚房作業環境需注意燒燙傷風險", "severity": "Low" }
+    ],
+    "status": "Underwriting",
+    "healthDeclarations": [
+      { "q": "是否患有B型肝炎？", "a": "是", "detail": "帶原者，每半年定期追蹤。" }
+    ]
+  },
+  {
+    "policyNo": "L500100204",
+    "applicant": {
+      "name": "謝依靜",
+      "avatar": "https://i.pravatar.cc/150?u=L500100204",
+      "relation": "本人",
+      "id": "G222555666",
+      "gender": "F",
+      "birthDate": "1997/12/28",
+      "occupation": "航空空服員",
+      "occLevel": 2
+    },
+    "allProducts": [
+      { "id": "R15", "type": "附約", "name": "實支實付醫療險", "amount": 300000, "premium": 8200 },
+      { "id": "R12", "type": "附約", "name": "重大疾病給付", "amount": 500000, "premium": 3200 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Occupation", "message": "航空從業人員，需確認飛行時數與地區", "severity": "Low" }
+    ],
+    "status": "Pending",
+    "healthDeclarations": [
+      { "q": "是否有長期的睡眠障礙？", "a": "是", "detail": "因時差問題偶爾服用助眠藥物。" }
+    ]
+  },
+  {
+    "policyNo": "L500100205",
+    "applicant": {
+      "name": "曾大城",
+      "avatar": "https://i.pravatar.cc/150?u=L500100205",
+      "relation": "本人",
+      "id": "A123777888",
+      "gender": "M",
+      "birthDate": "1970/02/14",
+      "occupation": "知名節目主持人",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 20000000, "premium": 420000 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Financial", "message": "高收入族群，需核對去年所得稅單", "severity": "Medium" }
+    ],
+    "status": "Underwriting",
+    "healthDeclarations": [
+      { "q": "是否有胃潰瘍病史？", "a": "是", "detail": "去年健檢發現輕微胃潰瘍，已治癒。" }
+    ]
+  },
+  {
+    "policyNo": "L500100206",
+    "applicant": {
+      "name": "蕭淑雅",
+      "avatar": "https://i.pravatar.cc/150?u=L500100206",
+      "relation": "本人",
+      "id": "B222888999",
+      "gender": "F",
+      "birthDate": "1983/05/17",
+      "occupation": "百貨專櫃人員",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "R08", "type": "附約", "name": "癌症醫療終身", "amount": 2000000, "premium": 12000 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "有無子宮肌瘤紀錄？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L500100207",
+    "applicant": {
+      "name": "潘俊傑",
+      "avatar": "https://i.pravatar.cc/150?u=L500100207",
+      "relation": "本人",
+      "id": "H111999000",
+      "gender": "M",
+      "birthDate": "1991/11/03",
+      "occupation": "健身教練",
+      "occLevel": 2
+    },
+    "allProducts": [
+      { "id": "MAIN_PA01", "type": "主約", "name": "安心傷害保險", "amount": 3000000, "premium": 5800 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "近期有無運動傷害？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L500100208",
+    "applicant": {
+      "name": "蘇芯妤",
+      "avatar": "https://i.pravatar.cc/150?u=L500100208",
+      "relation": "本人",
+      "id": "D222000111",
+      "gender": "F",
+      "birthDate": "1996/07/21",
+      "occupation": "自由插畫家",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 1000000, "premium": 14000 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "視力是否有高度近視？", "a": "是", "detail": "雙眼近視約 800 度。" }
+    ]
+  },
+  {
+    "policyNo": "L500100209",
+    "applicant": {
+      "name": "鄧麗華",
+      "avatar": "https://i.pravatar.cc/150?u=L500100209",
+      "relation": "本人",
+      "id": "C222111222",
+      "gender": "F",
+      "birthDate": "1960/04/30",
+      "occupation": "家管",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "R12", "type": "附約", "name": "重大疾病給付", "amount": 1000000, "premium": 18000 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Health", "message": "高齡投保重大疾病險，需注意費率與保額限制", "severity": "Medium" }
+    ],
+    "status": "Pending",
+    "healthDeclarations": [
+      { "q": "是否曾有乳房硬塊紀錄？", "a": "是", "detail": "三年前有纖維囊腫切除手術，良性。" }
+    ]
+  },
+  {
+    "policyNo": "L500100210",
+    "applicant": {
+      "name": "呂志翔",
+      "avatar": "https://i.pravatar.cc/150?u=L500100210",
+      "relation": "本人",
+      "id": "K111333222",
+      "gender": "M",
+      "birthDate": "1982/08/12",
+      "occupation": "房屋仲介",
+      "occLevel": 2
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 4000000, "premium": 62000 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "有無抽菸？", "a": "是", "detail": "偶爾社交煙，每日不超過3根。" }
+    ]
+  },
+  {
+    "policyNo": "L500100211",
+    "applicant": {
+      "name": "梁雅筑",
+      "avatar": "https://i.pravatar.cc/150?u=L500100211",
+      "relation": "本人",
+      "id": "A222444555",
+      "gender": "F",
+      "birthDate": "1993/01/25",
+      "occupation": "牙科助理",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "R15", "type": "附約", "name": "實支實付醫療險", "amount": 200000, "premium": 5800 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "目前是否懷孕？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L500100212",
+    "applicant": {
+      "name": "曹大華",
+      "avatar": "https://i.pravatar.cc/150?u=L500100212",
+      "relation": "本人",
+      "id": "B111555666",
+      "gender": "M",
+      "birthDate": "1975/03/03",
+      "occupation": "建設公司負責人",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 30000000, "premium": 550000 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Health", "message": "尿酸偏高紀錄，需確認近期數據", "severity": "Medium" }
+    ],
+    "status": "Pending",
+    "healthDeclarations": [
+      { "q": "是否有痛風紀錄？", "a": "是", "detail": "曾有一次急性痛風發作，目前飲食控制中。" }
+    ]
+  },
+  {
+    "policyNo": "L500100213",
+    "applicant": {
+      "name": "韓美雲",
+      "avatar": "https://i.pravatar.cc/150?u=L500100213",
+      "relation": "本人",
+      "id": "F222666777",
+      "gender": "F",
+      "birthDate": "1980/12/10",
+      "occupation": "幼兒園老師",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "R02", "type": "附約", "name": "住院醫療日額", "amount": 3000, "premium": 2800 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "是否有過敏性鼻炎？", "a": "是", "detail": "季節性過敏。" }
+    ]
+  },
+  {
+    "policyNo": "L500100214",
+    "applicant": {
+      "name": "董振源",
+      "avatar": "https://i.pravatar.cc/150?u=L500100214",
+      "relation": "本人",
+      "id": "A111777999",
+      "gender": "M",
+      "birthDate": "1968/06/18",
+      "occupation": "大貨車司機",
+      "occLevel": 4
+    },
+    "allProducts": [
+      { "id": "MAIN_PA01", "type": "主約", "name": "安心傷害保險", "amount": 1000000, "premium": 6000 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Occupation", "message": "長期駕駛與高勞動，需確認心血管狀況", "severity": "Medium" }
+    ],
+    "status": "Underwriting",
+    "healthDeclarations": [
+      { "q": "血脂是否異常？", "a": "是", "detail": "總膽固醇 230 mg/dL。" }
+    ]
+  },
+  {
+    "policyNo": "L500100215",
+    "applicant": {
+      "name": "廖小涵",
+      "avatar": "https://i.pravatar.cc/150?u=L500100215",
+      "relation": "本人",
+      "id": "E222888000",
+      "gender": "F",
+      "birthDate": "1998/02/02",
+      "occupation": "社群行銷專員",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "R15", "type": "附約", "name": "實支實付醫療險", "amount": 150000, "premium": 3500 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "有無重大手術？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L500100216",
+    "applicant": {
+      "name": "馮國強",
+      "avatar": "https://i.pravatar.cc/150?u=L500100216",
+      "relation": "本人",
+      "id": "A111000222",
+      "gender": "M",
+      "birthDate": "1973/09/09",
+      "occupation": "保全人員",
+      "occLevel": 2
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 500000, "premium": 12000 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "有無抽菸習慣？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L500100217",
+    "applicant": {
+      "name": "魏子傑",
+      "avatar": "https://i.pravatar.cc/150?u=L500100217",
+      "relation": "本人",
+      "id": "H123444555",
+      "gender": "M",
+      "birthDate": "1987/10/31",
+      "occupation": "高空作業工",
+      "occLevel": 6
+    },
+    "allProducts": [
+      { "id": "MAIN_PA01", "type": "主約", "name": "安心傷害保險", "amount": 1000000, "premium": 15000 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Occupation", "message": "高處作業風險極大，列為不保對象", "severity": "High" }
+    ],
+    "status": "Rejected",
+    "healthDeclarations": [
+      { "q": "是否領有身心障礙手冊？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L500100218",
+    "applicant": {
+      "name": "彭大晏",
+      "avatar": "https://i.pravatar.cc/150?u=L500100218",
+      "relation": "本人",
+      "id": "A123555444",
+      "gender": "M",
+      "birthDate": "1982/03/24",
+      "occupation": "專業運動員",
+      "occLevel": 4
+    },
+    "allProducts": [
+      { "id": "MAIN_PA01", "type": "主約", "name": "安心傷害保險", "amount": 10000000, "premium": 85000 }
+    ],
+    "riskAlerts": [
+      { "id": 1, "type": "Financial", "message": "高保額意外險，需提供專屬契約與收入說明", "severity": "Medium" }
+    ],
+    "status": "Underwriting",
+    "healthDeclarations": [
+      { "q": "有無重大關節手術？", "a": "是", "detail": "右膝韌帶重建手術，恢復良好。" }
+    ]
+  },
+  {
+    "policyNo": "L500100219",
+    "applicant": {
+      "name": "沈嘉嘉",
+      "avatar": "https://i.pravatar.cc/150?u=L500100219",
+      "relation": "本人",
+      "id": "A222999000",
+      "gender": "F",
+      "birthDate": "1990/01/15",
+      "occupation": "律師",
+      "occLevel": 1
+    },
+    "allProducts": [
+      { "id": "MAIN_PL03", "type": "主約", "name": "守護終身壽險 (PL03)", "amount": 5000000, "premium": 75000 },
+      { "id": "R12", "type": "附約", "name": "重大疾病給付", "amount": 2000000, "premium": 15000 }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "有無長期服藥？", "a": "否", "detail": "" }
     ]
   }
 ]

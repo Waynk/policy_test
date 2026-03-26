@@ -6,10 +6,12 @@
           <v-toolbar
             density="compact"
             class="d-flex pa-2 border-md border-black border-opacity-100 ma-2 mx-auto"
+            style="white-space: pre-wrap"
           >
             {{
-              `policyNo: ${virReview.policyNo} - Applicant: ${virReview.applicant.name}`
+              `policyNo: ${virReview.policyNo} - Applicant: ${virReview.applicant.name}    `
             }}
+            <v-avatar :image="virReview.applicant.avatar"></v-avatar>
             <v-spacer />
             <span class="text-caption">Status: </span>
             <v-chip color="primary" variant="tonal">{{
@@ -78,10 +80,13 @@
 </template>
 
 <script setup>
-import review from "@/data/review.json";
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
+import { useUserStore } from "@/store/reviewUser";
+import { storeToRefs } from "pinia";
 
-const virReview = ref(review);
+const review = useUserStore();
+
+const { user: virReview } = storeToRefs(review);
 
 const header = [
   { title: "代號", key: "id" },
@@ -100,4 +105,8 @@ const isEye = ref(false);
 const switchEye = () => {
   isEye.value = !isEye.value;
 };
+
+onMounted(() => {
+  console.log(virReview);
+});
 </script>

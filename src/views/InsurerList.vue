@@ -9,7 +9,7 @@
             :prepend-avatar="item.applicant.avatar"
             variant="outlined"
             @click="
-              submit();
+              submit(item);
               jump();
             "
           >

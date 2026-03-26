@@ -47,16 +47,24 @@
             <v-btn variant="outlined" color="error">未過審</v-btn>
           </v-card-actions>
         </v-card>
+        <div class="d-flex mt-6">
+          <v-spacer />
+          <v-btn variant="elevation" to="/users" elevation="8"> 返回 </v-btn>
+        </div>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script setup>
-import review from "@/data/review.json";
 import { ref } from "vue";
+import { useUserStore } from "@/store/reviewUser";
+import { storeToRefs } from "pinia";
 
-const virReview = ref(review);
+const review = useUserStore();
+
+const { user: virReview } = storeToRefs(review);
+
 const isCheck = ref(false);
 const description = ref("");
 </script>
