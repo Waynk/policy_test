@@ -1,7 +1,16 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12"> </v-col>
+      <v-col cols="12">
+        <v-select
+          :items="occLevels"
+          item-title="title"
+          item-value="value"
+          label="請選擇想篩選的職業等級"
+          variant="outlined"
+          v-model="occLevel"
+        />
+      </v-col>
     </v-row>
     <v-row>
       <v-col cols="12">
@@ -63,12 +72,14 @@ const page = ref(1);
 
 const limit = ref(8);
 
-const talpage = Math.ceil(virUsers.value.length / limit.value);
+const talpage = computed(() => {
+  return Math.ceil(occFilter.value.length / limit.value);
+});
 
 const cutUsers = computed(() => {
   const start = (page.value - 1) * limit.value;
   const end = start + limit.value;
-  return virUsers.value.slice(start, end);
+  return occFilter.value.slice(start, end);
 });
 
 //保留分頁
@@ -84,5 +95,27 @@ watch(page, (newPage) => {
   router.replace({
     query: { ...route.query, page: newPage },
   });
+});
+
+//篩選
+const occLevels = [
+  { title: "第一級: 危險度極低", value: 1 },
+  { title: "第二級: 危險度低", value: 2 },
+  { title: "第三級: 危險度中", value: 3 },
+  { title: "第四級: 危險度中高", value: 4 },
+  { title: "第五級: 危險度高", value: 5 },
+  { title: "第六級: 危險度極高", value: 6 },
+];
+
+const occLevel = ref(null);
+
+const occFilter = computed(() => {
+  return virUsers.value.filter((value) => {
+    return occLevel.value == null || value.applicant.occLevel == occLevel.value;
+  });
+});
+
+watch(occLevel, () => {
+  page.value = 1;
 });
 </script>
