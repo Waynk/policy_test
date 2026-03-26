@@ -30,6 +30,26 @@ const routes = [
   {
     path: '/users',
     component: () => import('../views/InsurerList.vue')
+  },
+  {
+    path: '/calculate',
+    component: () => import('../views/TrailCalculate2.vue')
+  },
+  {
+    path: '/jobtask',
+    component: () => import('../views/ProductTrack.vue')
+  },
+  {
+    path: '/policy',
+    component: () => import('../views/PolicyCal.vue')
+  },
+  {
+    path: '/policy2',
+    component: () => import('../views/PolicyCal2.vue')
+  },
+  {
+    path: '/insuranceform',
+    component: () => import('../components/InsuranceForm.vue')
   }
 ]
 
