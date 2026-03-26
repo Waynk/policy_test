@@ -1,0 +1,132 @@
+[
+  {
+    "policyNo": "L112233445",
+    "applicant": {
+      "name": "李大華",
+      "avatar": "https://i.pravatar.cc/150?u=L112233445",
+      "relation": "本人",
+      "id": "H121212121",
+      "gender": "M",
+      "birthDate": "1985/05/20",
+      "occupation": "外線電工",
+      "occLevel": 5
+    },
+    "allProducts": [
+      {
+        "id": "MAIN_PL03",
+        "type": "主約",
+        "name": "守護終身壽險 (PL03)",
+        "amount": 2000000,
+        "premium": 32000
+      },
+      {
+        "id": "R05",
+        "type": "附約",
+        "name": "意外失能給付",
+        "amount": 5000000,
+        "premium": 6000
+      }
+    ],
+    "riskAlerts": [
+      {
+        "id": 1,
+        "type": "Occupation",
+        "message": "職業等級 5，屬高危險工種，需核定限額",
+        "severity": "High"
+      },
+      {
+        "id": 2,
+        "type": "History",
+        "message": "兩年前曾有同業拒保紀錄",
+        "severity": "High"
+      }
+    ],
+    "status": "Pending",
+    "healthDeclarations": [
+      { "q": "是否患有高血壓？", "a": "否", "detail": "" },
+      { "q": "過去兩年內是否曾接受醫師治療？", "a": "是", "detail": "因工作意外導致左手骨折，已痊癒。" }
+    ]
+  },
+  {
+    "policyNo": "L887766554",
+    "applicant": {
+      "name": "林美玲",
+      "avatar": "https://i.pravatar.cc/150?u=L887766554",
+      "relation": "本人",
+      "id": "F225588331",
+      "gender": "F",
+      "birthDate": "1995/11/12",
+      "occupation": "一般內勤會計",
+      "occLevel": 1
+    },
+    "allProducts": [
+      {
+        "id": "MAIN_PL03",
+        "type": "主約",
+        "name": "守護終身壽險 (PL03)",
+        "amount": 1000000,
+        "premium": 18000
+      },
+      {
+        "id": "R02",
+        "type": "附約",
+        "name": "住院醫療日額",
+        "amount": 3000,
+        "premium": 1200
+      },
+      {
+        "id": "R08",
+        "type": "附約",
+        "name": "癌症醫療終身",
+        "amount": 1000000,
+        "premium": 5500
+      }
+    ],
+    "riskAlerts": [],
+    "status": "Approved",
+    "healthDeclarations": [
+      { "q": "是否患有高血壓？", "a": "否", "detail": "" },
+      { "q": "是否有抽菸習慣？", "a": "否", "detail": "" }
+    ]
+  },
+  {
+    "policyNo": "L556677889",
+    "applicant": {
+      "name": "陳建宏",
+      "avatar": "https://i.pravatar.cc/150?u=L556677889",
+      "relation": "本人",
+      "id": "A100200300",
+      "gender": "M",
+      "birthDate": "1972/03/15",
+      "occupation": "科技公司執行長",
+      "occLevel": 1
+    },
+    "allProducts": [
+      {
+        "id": "MAIN_PL03",
+        "type": "主約",
+        "name": "守護終身壽險 (PL03)",
+        "amount": 50000000,
+        "premium": 850000
+      }
+    ],
+    "riskAlerts": [
+      {
+        "id": 1,
+        "type": "Financial",
+        "message": "高保額件：需進行財務核保並提供財力證明",
+        "severity": "Medium"
+      },
+      {
+        "id": 2,
+        "type": "Health",
+        "message": "需安排體檢 (一般體檢+心電圖)",
+        "severity": "Medium"
+      }
+    ],
+    "status": "Underwriting",
+    "healthDeclarations": [
+      { "q": "是否有抽菸習慣？", "a": "是", "detail": "每日約半包，菸齡 20 年。" }
+    ]
+  }
+]

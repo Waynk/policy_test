@@ -26,6 +26,10 @@ const routes = [
   {
     path: '/review',
     component: () => import('../views/ReviewPolicy.vue')
+  },
+  {
+    path: '/users',
+    component: () => import('../views/InsurerList.vue')
   }
 ]
 
