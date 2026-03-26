@@ -49,7 +49,9 @@
         </v-card>
         <div class="d-flex mt-6">
           <v-spacer />
-          <v-btn variant="elevation" to="/users" elevation="8"> 返回 </v-btn>
+          <v-btn variant="elevation" @click="router.back()" elevation="8">
+            返回
+          </v-btn>
         </div>
       </v-col>
     </v-row>
@@ -60,6 +62,9 @@
 import { ref } from "vue";
 import { useUserStore } from "@/store/reviewUser";
 import { storeToRefs } from "pinia";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
 
 const review = useUserStore();
 

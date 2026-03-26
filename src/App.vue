@@ -1,18 +1,12 @@
 <template>
   <v-app>
+    <AppBar></AppBar>
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
-<script>
-
-export default {
-  name: 'App',
-
-  data: () => ({
-    //
-  }),
-}
+<script setup>
+import AppBar from "./components/AppBar.vue";
 </script>

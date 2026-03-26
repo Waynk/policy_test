@@ -1,6 +1,9 @@
 <template>
   <v-container>
     <v-row>
+      <v-col cols="12"> </v-col>
+    </v-row>
+    <v-row>
       <v-col cols="12">
         <v-list lines="two">
           <v-list-item
@@ -23,7 +26,13 @@
             </v-list-item-subtitle>
           </v-list-item>
         </v-list>
-        <v-pagination :length="talpage" v-model="page"></v-pagination>
+        <v-pagination
+          :length="talpage"
+          v-model="page"
+          active-color="#8C9EFF"
+          total-visible="5"
+          show-first-last-page
+        ></v-pagination>
       </v-col>
     </v-row>
   </v-container>
@@ -31,9 +40,9 @@
 
 <script setup>
 import users from "@/data/reviewUsers.json";
-import { ref, computed } from "vue";
+import { ref, computed, watch, onMounted } from "vue";
 import { useUserStore } from "@/store/reviewUser";
-import { useRouter } from "vue-router";
+import { useRouter, useRoute } from "vue-router";
 
 const virUsers = ref(users);
 
@@ -43,13 +52,13 @@ const submit = (item) => {
   user.setUser(item);
 };
 
+//分頁功能
 const router = useRouter();
 
 const jump = () => {
   router.push("review");
 };
 
-//分頁功能
 const page = ref(1);
 
 const limit = ref(8);
@@ -60,5 +69,20 @@ const cutUsers = computed(() => {
   const start = (page.value - 1) * limit.value;
   const end = start + limit.value;
   return virUsers.value.slice(start, end);
+});
+
+//保留分頁
+const route = useRoute();
+
+onMounted(() => {
+  if (route.query.page) {
+    page.value = route.query.page;
+  }
+});
+
+watch(page, (newPage) => {
+  router.replace({
+    query: { ...route.query, page: newPage },
+  });
 });
 </script>

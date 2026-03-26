@@ -1,8 +1,6 @@
 <template>
   <v-container>
-    <v-row>
-      <AppBar></AppBar>
-    </v-row>
+    <v-row> </v-row>
     <v-row>
       <v-col cols="12">
         <v-card class="d-flex" color="#0D47A1">
@@ -42,7 +40,6 @@ import { computed } from "vue";
 import SearchArea from "@/components/SearchArea";
 import StaffTable from "@/components/StaffTable.vue";
 import { ref } from "vue";
-import AppBar from "@/components/AppBar.vue";
 
 const isOnLine = computed(() => {
   return (
